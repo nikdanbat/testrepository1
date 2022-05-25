@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+  <!--  Link in JS and CSS files -->
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Web App - Simple Interest Calculator</title>
+
+    </head>
+    <body>
+
+  <!--  Layout the screen  -->
+
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+
+        Amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"  id="principal"> 
+         <br>
+	 <br>
+        Interest Rate &nbsp;&nbsp;&nbsp; <input type="range" id="rate" min="1"
+         max="20" step=".25" value="10.25" onchange="updateRate()"> 
+         <span id="rate_val">
+            10.25%
+            </span>
+         <br>
+	 <br>
+         No. of Years &nbsp;&nbsp;&nbsp;&nbsp; <select id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          
+        </select>
+          <br>
+<br>
+	  
+         
+  <!--  Set action to execute function if button is clicked -->
+       
+  
+        <button onclick="computeInt()">Compute Interest</button>
+
+        <br>
+<br> 
+	 <span id="result"></span>
+
+<br>
+<br> 
+
+        &#169; Everyone Can Get Rich <br> 
+	       This Calculator belongs to Monica Tolliver
+<br>
+    </div>
+    </body>
+    <footer>
+
+
+
+</footer>
+</html>
